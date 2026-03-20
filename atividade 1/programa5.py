@@ -1,2 +1,4 @@
-largura = float(input("digite a largura do terreno em metros:"))
-altura = float(input("digite a altura do terreno em metros:"))
+largura = float(input("Digite a largura do terreno em metros:"))
+altura = float(input("Digite a altura do terreno em metros:"))
+area = altura * largura
+print("A area do terreno é :",area)
