@@ -1,10 +1,11 @@
 import math
 
-x1 = float(input("Digite x1: "))
-y1 = float(input("Digite y1: "))
-x2 = float(input("Digite x2: "))
-y2 = float(input("Digite y2: "))
+x1 = float(input("Digite a cordenada x do primeiro ponto: "))
+y1 = float(input("Digite cordenada x do primeiro ponto: "))
+x2 = float(input("Digite cordenada x do segundo ponto: "))
+y2 = float(input("Digite cordenada x do segundo ponto: "))
 
-distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-
-print("Distância:", distancia)
+diferença_x = x2 - x1         
+diferença = y2 - y1
+distancia = (diferente_x "" 2 )+ (diferença_y ** 2) ** 0.5
+print(" A distância entre os pontos é:", distancia)

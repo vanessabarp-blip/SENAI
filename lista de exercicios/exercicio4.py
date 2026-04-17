@@ -1,7 +1,10 @@
-qtd_pequena = int(input("Quantidade de camisetas pequenas: "))
-qtd_media = int(input("Quantidade de camisetas médias: "))
-qtd_grande = int(input("Quantidade de camisetas grandes: "))
+preço_pequena = 10
+preço_media = 12
+preço_grande = 15
 
-total = (qtd_pequena * 10) + (qtd_media * 12) + (qtd_grande * 15)
+quantidade_pequenas =int(input("Digite a quantidade de camisetas pequenas: "))
+quantidade_medias =int(input("Digite a quantidade de camisetas medias: "))
+quantidade_grandes =int(input("Digite a quantidade de camisetas grandes: "))
 
-print("Valor arrecadado: R$", total)
+Valor_arrecadado = (quantidade_pequenas * preço_pequena) + (quantidade_medias * preço_media) +(quantidade_grandes + preço_grande)
+print ("o valor total arrecadado é : ",valor_arrecadado)
