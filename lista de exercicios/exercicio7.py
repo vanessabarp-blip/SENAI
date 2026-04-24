@@ -1,6 +1,7 @@
-salario = float(input("Digite o salário: "))
+salario = float(input("Digite o salário atual: "))
 
 salario_aumentado = salario * 1.15
+imposto = salario_aumentado - imposto
 salario_final = salario_aumentado * 0.92
 
 print("Salário inicial:", salario)
