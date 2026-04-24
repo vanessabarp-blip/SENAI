@@ -1,9 +1,7 @@
-dias = int(input("Digite a quantidade de dias: "))
+# Cálculo de anos, meses e dias
+anos = dias_trabalhados // 365
+meses = (dias_trabalhados % 365) // 30
+dias = (dias_trabalhados % 365) % 30
 
-anos = dias // 365
-resto = dias % 365
-
-meses = resto // 30
-dias_restantes = resto % 30
-
-print(anos, "anos,", meses, "meses e", dias_restantes, "dias")
+# Exibição do resultado
+print(f"{dias_trabalhados} dias equivalem a {anos} anos, {meses} meses e {dias} dias.")
