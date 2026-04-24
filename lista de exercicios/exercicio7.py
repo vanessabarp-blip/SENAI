@@ -1,9 +1,11 @@
-salario = float(input("Digite o salário atual: "))
+horas_normais = float(input("Digite as horas normais trabalhadas: "))
+horas_extras = float(input("Digite as horas extras trabalhadas: "))
 
-salario_aumentado = salario * 1.15
-imposto = salario_aumentado - imposto
-salario_final = salario_aumentado * 0.92
+salario_bruto = (horas_normais * 10) + (horas_extras * 15)
 
-print("Salário inicial:", salario)
-print("Salário com aumento:", salario_aumentado)
-print("Salário final:", salario_final)
+imposto = salario_bruto * 0.10
+
+salario_liquido = salario_bruto - imposto
+
+print("Salário bruto: R$", salario_bruto)
+print("Salário líquido: R$", salario_liquido)
