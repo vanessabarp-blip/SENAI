@@ -1,12 +1,7 @@
 total = float(input("Digite o valor total da conta: "))
 
-parte = total / 3
-
-vanessa = int(parte)
-andre = int(parte)
-
-felipe = total - (vanessa + andre)
-
-print("Vanessa paga:", vanessa)
-print(" paga:", andre)
+valor1= total//3
+felipe = total - (2* valor1)
+print("carlos paga:", valor1)
+print(" Carlos paga:", valor1)
 print("Felipe paga:", felipe)
