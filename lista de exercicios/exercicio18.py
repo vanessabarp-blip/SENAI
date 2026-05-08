@@ -1,3 +1,4 @@
+#exercicio 22
 qtd1 = int(input("Moedas de 1 centavo: "))
 qtd5 = int(input("Moedas de 5 centavos: "))
 qtd10 = int(input("Moedas de 10 centavos: "))
