@@ -1,9 +1,7 @@
-X = float(input("Digite a quantidade total de refresco (litros): "))
+# Atividade 24 do tonel
+total_refresco = float(input("Quantidade de refresco desejada (litros): "))
 
-parte = X / 10
+agua = total_refresco * 0.8  # 8 partes de 10
+suco = total_refresco * 0.2  # 2 partes de 10
 
-agua = 8 * parte
-suco = 2 * parte
-
-print(f"Água necessária: {agua:.2f} litros")
-print(f"Suco necessário: {suco:.2f} litros")
+print(f"Para {total_refresco}L de refresco, use {agua:.2f}L de água e {suco:.2f}L de suco.")

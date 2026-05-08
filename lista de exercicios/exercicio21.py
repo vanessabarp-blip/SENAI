@@ -1,8 +1,7 @@
-import math
+#  Atividade 25
+raio = float(input("Digite o raio da base (m): "))
+altura = float(input("Digite a altura da caixa (m): "))
 
-# Entrada de dados
-diametro = float(input("Digite o diâmetro da caixa (em metros): "))
-altura = float(input("Digite a altura da caixa (em metros): "))
-raio = diametro / 2
-volume = math.pi * (raio ** 2) * altura
-print(f"O volume da caixa d'água é: {volume:.2f} metros cúbicos")
+volume = 3.14159 * (raio ** 2) * altura
+
+print(f"O volume da caixa d'água é: {volume:.2f} m³ (ou {volume*1000:.2f} litros).")

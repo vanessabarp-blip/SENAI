@@ -1,6 +1,6 @@
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
-
-resultado = num1 / num2
-
-print("O resultado da divisão é:", resultado)
+#Atividade 26 - Laço For
+resultado = 1
+for i in range(3):
+    num = float(input(f"Digite o {i+1}º número: "))
+    resultado *= num
+print(f"Resultado final: {resultado}")
