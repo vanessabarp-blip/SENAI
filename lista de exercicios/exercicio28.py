@@ -1,12 +1,9 @@
-# Recebe o peso da pessoa
-peso = float(input("Digite o peso da pessoa: "))
+# Recebe o peso da pessoa exercicio 31
+# Atividade 31 - Simples
+peso_atual = float(input("Digite o peso atual (kg): "))
 
-# Calcula o novo peso com aumento de 15%
-peso_engordar = peso * 1.15
+engordar = peso_atual * 1.15
+emagrecer = peso_atual * 0.80
 
-# Calcula o novo peso com redução de 20%
-peso_emagrecer = peso * 0.80
-
-# Mostra os resultados
-print("Peso com aumento de 15%:", peso_engordar)
-print("Peso com redução de 20%:", peso_emagrecer)
+print(f"Se engordar 15%, o peso será: {engordar:.2f} kg")
+print(f"Se emagrecer 20%, o peso será: {emagrecer:.2f} kg")

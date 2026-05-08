@@ -1,4 +1,4 @@
-# Salário do João
+# Salário do João exercicio 39
 salario = 1200.00
 
 # Valores das contas

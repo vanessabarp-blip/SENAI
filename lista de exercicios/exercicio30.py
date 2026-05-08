@@ -1,4 +1,4 @@
-# Recebe os valores
+# Recebe os valores exercicio 33
 base_maior = float(input("Digite a base maior: "))
 base_menor = float(input("Digite a base menor: "))
 altura = float(input("Digite a altura: "))

@@ -1,4 +1,4 @@
-# Recebe o salário fixo e o valor das vendas
+# Recebe o salário fixo e o valor das vendas exercicio30
 salario_fixo = float(input("Digite o salário fixo: "))
 vendas = float(input("Digite o valor das vendas: "))
 
