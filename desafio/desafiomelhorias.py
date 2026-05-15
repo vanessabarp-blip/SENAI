@@ -1,33 +1,35 @@
 import time
 
-def monitorar_irrigacao():
-    umidade_atual = 15
-    META_IDEAL = 40
-    INCREMENTO = 5
-    LIMITE_SEGURANCA = 30 # Caso o sensor falhe e continue subindo
-    tentativas = 0
 
-    print("--- SISTEMA DE IRRIGAÇÃO PRO ATIVADO ---")
+print("="*50)
+print("SISTEMA DE AUTOMAÇÃO DE IRRIGAÇÃO - GRUPO 5")
+print("Vanessa Barp | Mario Junior | Anna dos Santos")
+print("="*50)
 
-    while umidade_atual < META_IDEAL:
-        # Simulação de segurança: impede loop infinito se a água acabar
-        if tentativas > 15:
-            print("ERRO: Umidade não sobe. Verifique o suprimento de água!")
-            return
 
-        print(f"[STATUS] Umidade: {umidade_atual}% | Irrigador: LIGADO")
+umidade_atual = 15.0  
+umidade_ideal = 40.0  
+incremento = 5.0     
+
+
+if umidade_atual >= umidade_ideal:
+    print("Irrigação não necessária.")
+else:
+    print(f"Umidade inicial: {umidade_atual}%")
+    print("--- INICIANDO IRIGAÇÃO ---\n")
+
+    while umidade_atual < umidade_ideal:
+
+        umidade_atual += incremento
+    
+        if umidade_atual > umidade_ideal:
+            umidade_atual = umidade_ideal
+
+        print(f"Irrigador ligado... Umidade em {umidade_atual}%")
         
-        # Simula o tempo de absorção da terra
-        time.sleep(0.5) 
-        
-        umidade_atual += INCREMENTO
-        tentativas += 1
+        time.sleep(0.5)
 
-        if umidade_atual >= LIMITE_SEGURANCA:
-            print("ALERTA: Umidade excessiva detectada! Desligamento de emergência.")
-            break
-
-    print(f"--- META ATINGIDA: {umidade_atual}% ---")
-    print("Sistema em modo de espera (Standby).")
-
-monitorar_irrigacao()
+    print("\n" + "-"*40)
+    print(f"Irrigação Concluída. Solo no nível ideal de {umidade_atual}%")
+    print("Nível ideal atingido.")
+    print("-"*40)
